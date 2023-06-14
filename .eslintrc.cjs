@@ -22,6 +22,9 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/extensions': 'off',
     'import/order': 'off',
+    'max-len': ['error', { code: 120 }],
+    'object-curly-newline': 'off',
+    'react-hooks/exhaustive-deps': 'off'
   },
   settings: {
     react: {

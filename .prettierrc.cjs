@@ -4,6 +4,7 @@ module.exports = {
   trailingComma: 'all',
   singleQuote: true,
   printWidth: 120,
+  'max-len': 120,
   tabWidth: 2,
   endOfLine: 'auto',
   useTabs: false,
@@ -18,4 +19,5 @@ module.exports = {
   unusedImports: false,
   importedCss: true,
   sortImports: false,
+  'object-curly-newline': 'auto'
 }
