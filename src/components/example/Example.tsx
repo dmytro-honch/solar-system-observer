@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import { useExample } from './hook';
-import { MENU_PATH } from 'src/features/Router/pathes.ts';
+import { MENU_PATH } from 'src/features/Router/pathes';
 
 import './example.css';
 

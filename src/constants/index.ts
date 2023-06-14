@@ -1,1 +1,1 @@
-export * as planetObserver from './planetObserver';
+export * from './planetObserver';

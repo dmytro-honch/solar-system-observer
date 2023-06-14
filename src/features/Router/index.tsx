@@ -4,19 +4,17 @@ import ObserverPage from 'src/features/ObserverPage';
 import MenuPage from 'src/features/Menu';
 import Page404 from 'src/features/404';
 
-import { MENU_PATH, PLANET_OBSERVER_PATH } from './pathes.ts';
+import { MENU_PATH, PLANET_OBSERVER_PATH } from './pathes';
 
-const Router = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path={PLANET_OBSERVER_PATH} element={<ObserverPage />} />
-        <Route path={MENU_PATH} element={<MenuPage />} />
+const Router = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path={PLANET_OBSERVER_PATH} element={<ObserverPage />} />
+      <Route path={MENU_PATH} element={<MenuPage />} />
 
-        <Route path="*" element={<Page404 />} />
-      </Routes>
-    </BrowserRouter>
-  );
-};
+      <Route path="*" element={<Page404 />} />
+    </Routes>
+  </BrowserRouter>
+);
 
 export default Router;

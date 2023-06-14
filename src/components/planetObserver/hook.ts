@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { initObserver } from 'src/utils/planetObserver/init.ts';
+import { initObserver } from 'src/utils/planetObserver/init';
 
 export const usePlanetObserver = (scale: number, angleY: number, angleX: number, displayMode: string, date: Date) => {
   const ref = useRef<HTMLCanvasElement>(null);

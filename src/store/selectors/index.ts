@@ -1,1 +1,1 @@
-export * as planetObserverSelectors from './planetObserver.ts';
+export * as planetObserverSelectors from './planetObserver';

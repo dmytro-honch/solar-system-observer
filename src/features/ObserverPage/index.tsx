@@ -1,6 +1,6 @@
-import { Example } from 'src/components/example/Example.tsx';
-import { PlanetObserver } from 'src/components/planetObserver/PlanetObserver.tsx';
-import { displayModes } from 'src/constants/planetObserver.ts';
+import { Example } from 'src/components/example/Example';
+import { PlanetObserver } from 'src/components/planetObserver/PlanetObserver';
+import { displayModes } from 'src/constants';
 
 const ObserverPage = () => {
   const date = new Date();

@@ -1,6 +1,6 @@
-import { usePlanetObserver } from './hook.ts';
+import { usePlanetObserver } from './hook';
 
-import './planetObserver.css';
+import './planetObserver';
 
 type PlanetObserverProps = {
   scale: number;
