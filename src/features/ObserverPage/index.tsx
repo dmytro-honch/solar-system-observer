@@ -1,4 +1,4 @@
-import { Example } from 'src/components/example/example.tsx';
+import { Example } from 'src/components/example/Example.tsx';
 
 const ObserverPage = () => {
   return <Example />;

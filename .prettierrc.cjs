@@ -1,5 +1,6 @@
 module.exports = {
   semi: true,
+  es2021: true,
   trailingComma: 'all',
   singleQuote: true,
   printWidth: 120,
@@ -16,5 +17,5 @@ module.exports = {
   htmlWhitespaceSensitivity: 'css',
   unusedImports: false,
   importedCss: true,
-  organaizeImports: true,
+  sortImports: false,
 }

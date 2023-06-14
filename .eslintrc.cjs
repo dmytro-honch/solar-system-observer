@@ -6,6 +6,8 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
+    'plugin:prettier/recommended',
+    'airbnb-base',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
@@ -13,7 +15,13 @@ module.exports = {
   rules: {
     'prettier/prettier': ['error', {}, {usePrattierrc: true}],
     'react-refresh/only-export-components': 'warn',
+    'react/react-in-jsx-scope': 'off',
+    '@typescript-eslint/no-explicit-any': 'error',
+    'react/require-default-props': 'warn',
+    'import/prefer-default-export': 'off',
     'import/no-unresolved': 'off',
+    'import/extensions': 'off',
+    'import/order': 'off',
   },
   settings: {
     react: {
