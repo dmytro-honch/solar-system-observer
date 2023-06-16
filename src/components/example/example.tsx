@@ -40,5 +40,5 @@ export const Example = ({ exampleProp }: ExamplePropType) => {
 };
 
 Example.defaultProps = {
-  exampleProp: 'Olexiy',
+  exampleProp: 'Oleksii',
 };
