@@ -1,1 +1,1 @@
-export * from './planetObserver.ts';
+export * from './planetObserver';

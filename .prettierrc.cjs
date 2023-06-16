@@ -1,8 +1,10 @@
 module.exports = {
   semi: true,
+  es2021: true,
   trailingComma: 'all',
   singleQuote: true,
   printWidth: 120,
+  'max-len': 120,
   tabWidth: 2,
   endOfLine: 'auto',
   useTabs: false,
@@ -16,5 +18,6 @@ module.exports = {
   htmlWhitespaceSensitivity: 'css',
   unusedImports: false,
   importedCss: true,
-  organaizeImports: true,
+  sortImports: false,
+  'object-curly-newline': 'auto'
 }

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import { PLANET_OBSERVER_PATH } from '../Router/pathes.ts';
 import { CONTACT_US_PATH } from '../Router/pathes.ts';
 import { ABOUT_US_PATH } from '../Router/pathes.ts';

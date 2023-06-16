@@ -1,8 +1,8 @@
 import { combineReducers } from '@reduxjs/toolkit';
 
-import planetObserver from './planetObserver.ts';
+import planetObserver from './planetObserver';
 
-export { planetObserverSlice } from './planetObserver.ts';
+export { planetObserverSlice } from './planetObserver';
 
 const rootReducer = combineReducers({
   planetObserver,
