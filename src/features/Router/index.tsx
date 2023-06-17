@@ -7,7 +7,7 @@ import ContactUs from 'src/features/ContactUs';
 import AboutProject from 'src/features/AboutProject';
 import SolarSystemObjects from 'src/features/SolarSystemObjects';
 
-import { MENU_PATH, PLANET_OBSERVER_PATH, FALLBACK_404_ROUTE, CONTACT_US_PATH, ABOUT_US_PATH, SOLAR_SYSTEM_PATH } from './pathes';
+import { MENU_PATH, PLANET_OBSERVER_PATH, FALLBACK_404_ROUTE, CONTACT_US_PATH, ABOUT_US_PATH, SOLAR_SYSTEM_PATH } from './path';
 
 const Router = () => {
   return (

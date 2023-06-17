@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 
-import { PLANET_OBSERVER_PATH } from 'src/features/Router/pathes.ts';
-import { CONTACT_US_PATH } from 'src/features/Router/pathes.ts';
-import { ABOUT_US_PATH } from 'src/features/Router/pathes.ts';
-import { SOLAR_SYSTEM_PATH } from 'src/features/Router/pathes.ts';
-import { PROPOSE_CHANGES_PATH } from 'src/features/Router/pathes.ts';
-import { SAY_THANKS_PATH } from 'src/features/Router/pathes.ts';
+import { PLANET_OBSERVER_PATH } from 'src/features/Router/path';
+import { CONTACT_US_PATH } from 'src/features/Router/path';
+import { ABOUT_US_PATH } from 'src/features/Router/path';
+import { SOLAR_SYSTEM_PATH } from 'src/features/Router/path';
+import { PROPOSE_CHANGES_PATH } from 'src/features/Router/path';
+import { SAY_THANKS_PATH } from 'src/features/Router/path';
 
 const MenuPage = () => {
   return (
