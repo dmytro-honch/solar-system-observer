@@ -1,4 +1,4 @@
-import { Example } from 'src/components/example/Example';
+import { Example } from 'src/components/example/example';
 import { PlanetObserver } from 'src/components/planetObserver/PlanetObserver';
 import { displayModes } from 'src/constants';
 
