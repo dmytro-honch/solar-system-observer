@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 
-import { PLANET_OBSERVER_PATH } from '../Router/pathes.ts';
-import { CONTACT_US_PATH } from '../Router/pathes.ts';
-import { ABOUT_US_PATH } from '../Router/pathes.ts';
-import { SOLAR_SYSTEM_PATH } from '../Router/pathes.ts';
-import { PROPOSE_CHANGES_PATH } from '../Router/pathes.ts';
-import { SAY_THANKS_PATH } from '../Router/pathes.ts';
+import { PLANET_OBSERVER_PATH } from 'src/features/Router/pathes.ts';
+import { CONTACT_US_PATH } from 'src/features/Router/pathes.ts';
+import { ABOUT_US_PATH } from 'src/features/Router/pathes.ts';
+import { SOLAR_SYSTEM_PATH } from 'src/features/Router/pathes.ts';
+import { PROPOSE_CHANGES_PATH } from 'src/features/Router/pathes.ts';
+import { SAY_THANKS_PATH } from 'src/features/Router/pathes.ts';
 
 const MenuPage = () => {
   return (
@@ -20,10 +20,10 @@ const MenuPage = () => {
         <Link to={ABOUT_US_PATH}>About us</Link>
       </li>
       <li>
-        <a href={PROPOSE_CHANGES_PATH}>Propose changes</a>
+        <a href={PROPOSE_CHANGES_PATH} target="_blank">Propose changes</a>
       </li>
       <li>
-        <a href={SAY_THANKS_PATH}>Say thanks</a>
+        <a href={SAY_THANKS_PATH} target="_blank">Say thanks</a>
       </li>
       <li>
         <Link to={CONTACT_US_PATH}>Contact us</Link>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { PLANET_OBSERVER_PATH } from '../Router/pathes';
+import { PLANET_OBSERVER_PATH } from 'src/features/Router/pathes';
 
 const Page404 = () => (
   <div>
