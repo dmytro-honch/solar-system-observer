@@ -3,3 +3,18 @@
   --bg-font-color: rgb(21 22 27);
   --bg-color: #15161B;
 }
+
+:root[data-theme='light'] {
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+}
+
+:root[data-theme='dark'] {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
