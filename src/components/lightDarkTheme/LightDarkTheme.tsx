@@ -1,41 +1,31 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 export const LightDarkThemeToggle = () => {
-  const [theme, setTheme] = useState('light');
+  const defaultTheme = 'light';
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || defaultTheme);
 
-  const toggleTheme = () => {
+  const toggleTheme = useCallback(() => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
-  };
+    localStorage.setItem('theme', newTheme);
+  }, [theme]);
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme) {
-      setTheme(storedTheme);
-    }
-    applyThemeStyles();
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem('theme', theme);
     applyThemeStyles();
   }, [theme]);
 
   const applyThemeStyles = () => {
-    const root = document.documentElement;
+    const body = document.body;
     if (theme === 'light') {
-      root.style.setProperty('--primary-color', '#ffffff');
-      root.style.setProperty('--secondary-color', '#000000');
+      body.setAttribute('data-theme', 'light');
     } else {
-      root.style.setProperty('--primary-color', '#000000');
-      root.style.setProperty('--secondary-color', '#ffffff');
+      body.setAttribute('data-theme', 'dark');
     }
   };
 
   return (
     <div>
       <button onClick={toggleTheme}>Toggle Theme</button>
-      <div>Current theme: {theme}</div>
     </div>
   );
 };

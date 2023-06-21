@@ -1,7 +1,7 @@
 import { Example } from 'src/components/example/Example';
 import { PlanetObserver } from 'src/components/planetObserver/PlanetObserver';
 import { displayModes } from 'src/constants';
-import { LightDarkThemeToggle } from 'src/components/lightDarkTheme/LightDarkTheme'
+
 
 const ObserverPage = () => {
   const date = new Date();
@@ -13,7 +13,6 @@ const ObserverPage = () => {
   return (
     <>
       <Example />
-      <LightDarkThemeToggle />
       <PlanetObserver date={date} angleX={angleX} angleY={angleY} displayMode={displayMode} scale={scale} />
     </>
   );
