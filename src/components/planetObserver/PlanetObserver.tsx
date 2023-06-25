@@ -1,17 +1,9 @@
 import { usePlanetObserver } from './hook';
 
-import './planetObserver';
+import './planetObserver.css';
 
-type PlanetObserverProps = {
-  scale: number;
-  angleY: number;
-  angleX: number;
-  displayMode: string;
-  date: Date;
-};
-
-export const PlanetObserver = ({ scale, angleY, angleX, displayMode, date }: PlanetObserverProps) => {
-  const { ref } = usePlanetObserver(scale, angleY, angleX, displayMode, date);
+export const PlanetObserver = () => {
+  const { ref } = usePlanetObserver();
 
   return (
     <div className="planet-observer__wrapper">
