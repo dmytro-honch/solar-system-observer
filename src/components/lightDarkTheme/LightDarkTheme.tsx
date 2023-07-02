@@ -25,7 +25,7 @@ export const LightDarkThemeToggle = () => {
 
   return (
     <div>
-      <button onClick={toggleTheme}>Toggle Theme</button>
+      <button onClick={toggleTheme}>ToggleTheme</button>
     </div>
   );
 };
