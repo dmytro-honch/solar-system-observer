@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 
 export const LightDarkThemeToggle = () => {
-  const defaultTheme = 'light';
+  const defaultTheme = window.matchMedia('(prefers-color-scheme: dark)')?.matches ? 'dark' : 'light';
   const [theme, setTheme] = useState(localStorage.getItem('theme') || defaultTheme);
 
   const toggleTheme = useCallback(() => {
