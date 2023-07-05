@@ -1,11 +1,11 @@
-import { useLightDarkTheme } from './hook';
+import { useToggleTheme } from './hook';
 
-export const LightDarkThemeToggle = () => {
-  const { toggleTheme } = useLightDarkTheme()
-  
+export const LightDarkTheme = () => {
+  const handleToggleTheme = useToggleTheme();
+
   return (
     <div>
-      <button onClick={toggleTheme}>ToggleTheme</button>
+      <button onClick={handleToggleTheme}>Toggle Theme</button>
     </div>
   );
 };
