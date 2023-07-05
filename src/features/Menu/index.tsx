@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 
+
+import { LightDarkTheme } from 'src/components/lightDarkTheme/LightDarkTheme';
 import { PLANET_OBSERVER_PATH } from 'src/features/Router/path';
 import { CONTACT_US_PATH } from 'src/features/Router/path';
 import { ABOUT_US_PATH } from 'src/features/Router/path';
@@ -9,6 +11,8 @@ import { SAY_THANKS_PATH } from 'src/features/Router/path';
 
 const MenuPage = () => {
   return (
+    <>
+    <LightDarkTheme />
     <ul>
       <li>
         <Link to={PLANET_OBSERVER_PATH}>Planet Observer</Link>
@@ -32,7 +36,9 @@ const MenuPage = () => {
         <Link to={'/unlivable_url'}>404</Link>
       </li>
     </ul>
+    </>
   );
 };
+
 
 export default MenuPage;

@@ -2,4 +2,25 @@
   --light-font-color: #fff;
   --bg-font-color: rgb(21 22 27);
   --bg-color: #15161B;
+  --main-text-color-light: #000000;
+  --main-background-color-light: #ffffff;
+  --main-text-color-dark: #ffffff;
+  --main-background-color-dark: #000000;
+}
+
+[data-theme="light"] {
+  --main-text-color: var(--main-text-color-light);
+  --main-background-color: var(--main-background-color-light);
+}
+
+
+[data-theme="dark"] {
+  --main-text-color: var(--main-text-color-dark);
+  --main-background-color: var(--main-background-color-dark);
+}
+
+
+body {
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
 }

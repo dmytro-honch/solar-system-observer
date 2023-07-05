@@ -2,6 +2,7 @@ import { Example } from 'src/components/example/example';
 import { PlanetObserver } from 'src/components/planetObserver/PlanetObserver';
 import { displayModes } from 'src/constants';
 
+
 const ObserverPage = () => {
   const date = new Date();
   const scale = 1;
