@@ -1,2 +1,2 @@
 export * from './planetObserver';
-export * from './lightDarkTheme';
+export * from './themes';
