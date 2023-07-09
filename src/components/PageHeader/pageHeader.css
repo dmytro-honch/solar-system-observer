@@ -1,0 +1,20 @@
+/* .header-icons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  .headerButtonsSvg {
+    clip-path: circle(42% at 50% 50%);
+    outline: none;
+  }
+
+  button.headerButtonsSvg:focus {
+    outline: none;
+  }
+  
+  button.headerButtonsSvg:hover {
+    outline: none;
+  } */
