@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { PLANET_OBSERVER_PATH } from 'src/features/Router/path';
 
 
@@ -10,6 +10,6 @@ const SolarSystem = () => {
         </li>
       </ul>  
     )
-}
+};
 
 export default SolarSystem
