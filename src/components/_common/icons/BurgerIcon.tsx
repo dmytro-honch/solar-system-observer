@@ -4,8 +4,6 @@ type IconProps = {
   };
   
 export const BurgerIcon = ({ color, fontSize }: IconProps) => (
-
-<link>
     <svg
       width="28"
       height="28"
@@ -20,5 +18,4 @@ export const BurgerIcon = ({ color, fontSize }: IconProps) => (
       <path d="M4 21H20" />
       <path d="M4 14H14" />
     </svg>
-</link>
 );

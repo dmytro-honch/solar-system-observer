@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import ObserverPage from 'src/features/ObserverPage';
-import MenuPage from 'src/features/Menu';
+import MenuPage from 'src/features/MenuPage';
 import Page404 from 'src/features/404';
-import ContactUs from 'src/features/ContactUs';
-import AboutProject from 'src/features/AboutProject';
-import SolarSystemObjects from 'src/features/SolarSystemObjects';
+import ContactUs from 'src/features/ContactUsPage';
+import AboutProject from 'src/features/AboutProjectPage';
+import SolarSystemObjects from 'src/features/SolarSystemObjectsPage';
 
 import { MENU_PATH, PLANET_OBSERVER_PATH, FALLBACK_404_ROUTE, CONTACT_US_PATH, ABOUT_US_PATH, SOLAR_SYSTEM_PATH } from './path';
 

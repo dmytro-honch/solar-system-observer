@@ -1,0 +1,16 @@
+.burger-return-icon {
+    margin: 20px;
+    clip-path: circle(35% at center);
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}

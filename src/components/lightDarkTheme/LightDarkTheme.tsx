@@ -1,11 +1,18 @@
 import { useToggleTheme } from './hook';
 
+import './lightDarkTheme.css';
+
+import { SwitchThemeIcon } from 'src/components/_common/icons/SwitchThemeIcon'
+
+
 export const LightDarkTheme = () => {
   const handleToggleTheme = useToggleTheme();
 
   return (
-    <div>
-      <button onClick={handleToggleTheme}>Toggle Theme</button>
-    </div>
+      <button type="button" className="btn-theme-toggle" onClick={handleToggleTheme}>
+        <SwitchThemeIcon color="white" fontSize={16} />
+      </button>
   );
 };
+
+

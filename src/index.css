@@ -64,3 +64,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+svg, img { 
+  max-width: 100%; 
+  height: auto; 
+  vertical-align: bottom 
+}
