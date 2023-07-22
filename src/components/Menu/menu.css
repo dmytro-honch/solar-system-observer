@@ -1,0 +1,29 @@
+.menu-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 87vh;
+  padding: 0px;
+}
+
+.menu-page li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.menu-links {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: black;
+  border-radius: 30px;
+  width: 400px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.menu-links:hover {
+  color: white;
+}

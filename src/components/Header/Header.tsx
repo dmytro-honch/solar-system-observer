@@ -1,43 +1,25 @@
-import { Link } from 'react-router-dom';
-
 import { useHeader } from 'src/components/Header/hook';
-
-import { BurgerIcon } from 'src/components/_common/icons/BurgerIcon';
-import { CloseIcon } from 'src/components/_common/icons/CloseIcon';
 import { SwitchThemeIcon } from 'src/components/_common/icons/SwitchThemeIcon';
-import { LightDarkTheme } from 'src/components/LightDarkTheme/LightDarkTheme';
-
-import { MENU_PATH } from 'src/features/Router/path';
-import { PLANET_OBSERVER_PATH } from 'src/features/Router/path';
+import { SwitchTheme } from 'src/components/SwitchTheme/SwitchTheme';
+import { MainMenuButton } from 'src/components/MainMenuButton/MainMenuButton';
 
 import './header.css';
 
-
 type HeaderProps = {
-  showThemeToggle: boolean;
-  showBurgerIcon: boolean;
+  showThemeToggle?: boolean;
+  isMenuToggleActive?: boolean;
 };
 
-export const Header = ({ showThemeToggle, showBurgerIcon }: HeaderProps) => {
-  const { isMenuPage } = useHeader();
+export const Header = ({ showThemeToggle, isMenuToggleActive }: HeaderProps) => {
+  const { isMenuToggleActive: menuToggleActive } = useHeader(isMenuToggleActive);
 
   return (
     <header className="page-header">
-      {isMenuPage ? (
-          <Link to={PLANET_OBSERVER_PATH} className="burger-return-icon">
-               <CloseIcon color="white" fontSize={16} />
-          </Link>
-      ) : (
-        showBurgerIcon && (
-          <Link to={MENU_PATH} className="burger-return-icon">
-              <BurgerIcon color="white" fontSize={16} />
-          </Link>
-        )
-      )}
+      <MainMenuButton color="white" fontSize={16} isMenuToggleActive={menuToggleActive} />
       {showThemeToggle && (
-        <LightDarkTheme>
+        <SwitchTheme>
           <SwitchThemeIcon color="white" fontSize={16} />
-        </LightDarkTheme>
+        </SwitchTheme>
       )}
     </header>
   );

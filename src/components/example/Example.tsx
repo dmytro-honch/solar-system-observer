@@ -18,15 +18,21 @@ export const Example = ({ exampleProp }: ExamplePropType) => {
   return (
     <>
       <div className="wrapper">
-        <h1 className="heading">Change my code, {exampleProp}</h1>
+        <h1 className="heading">hello, {exampleProp}</h1>
         <div>isLoading: {isLoading ? 'true' : 'false'}</div>
         <div>isShowTools: {isShowTools ? 'true' : 'false'}</div>
         <div>isFullScreen: {isFullscreen ? 'true' : 'false'}</div>
         <hr />
         <div className="option-wrapper">
-          <button type="button" onClick={handleChangeLoadingState}>Change loading</button>
-          <button type="button" onClick={handleChangeShowToolsState}>Change showing tools</button>
-          <button type="button" onClick={handleChangeFullscreenState}>Change fullscreen</button>
+          <button type="button" onClick={handleChangeLoadingState}>
+            Change loading
+          </button>
+          <button type="button" onClick={handleChangeShowToolsState}>
+            Change showing tools
+          </button>
+          <button type="button" onClick={handleChangeFullscreenState}>
+            Change fullscreen
+          </button>
         </div>
       </div>
     </>
@@ -34,5 +40,5 @@ export const Example = ({ exampleProp }: ExamplePropType) => {
 };
 
 Example.defaultProps = {
-  exampleProp: 'Dimon',
+  exampleProp: 'kitty',
 };

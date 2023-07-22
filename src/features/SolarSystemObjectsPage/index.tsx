@@ -3,17 +3,17 @@ import { PLANET_OBSERVER_PATH } from 'src/features/Router/path';
 
 import { Header } from 'src/components/Header/Header';
 
-const SolarSystem = () => {
-    return (
-      <>
-      <Header showThemeToggle={false} showBurgerIcon={true}/>
+const SolarSystemObjectsPage = () => {
+  return (
+    <>
+      <Header showThemeToggle={false} isMenuToggleActive={true} />
       <ul>
         <li>
           <Link to={PLANET_OBSERVER_PATH}>Planet Observer</Link>
         </li>
-      </ul>  
-      </>
-    )
+      </ul>
+    </>
+  );
 };
 
-export default SolarSystem
+export default SolarSystemObjectsPage;

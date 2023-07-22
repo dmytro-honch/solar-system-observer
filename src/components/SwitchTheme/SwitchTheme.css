@@ -1,5 +1,5 @@
-.menu-button {
-  background-color: var(--primary-color);
+.btn-theme-toggle {
+  background-color: #1a1a1a;
   padding: 15px;
   border-radius: 50%;
   border: initial;
@@ -9,8 +9,7 @@
   margin: 10px;
 }
 
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
+.btn-theme-toggle:focus,
+.btn-theme-toggle:focus-visible {
+  outline: none;
 }

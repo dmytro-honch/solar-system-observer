@@ -65,9 +65,9 @@ button:focus-visible {
   }
 }
 
-
-svg, img { 
-  max-width: 100%; 
-  height: auto; 
-  vertical-align: bottom 
+svg,
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
 }

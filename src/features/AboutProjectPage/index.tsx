@@ -3,18 +3,17 @@ import { PLANET_OBSERVER_PATH } from 'src/features/Router/path';
 
 import { Header } from 'src/components/Header/Header';
 
-const AboutProject = () => {
-  
+const AboutProjectPage = () => {
   return (
     <>
-     <Header showThemeToggle={false} showBurgerIcon={true}/>
-    <ul>
-      <li>
-        <Link to={PLANET_OBSERVER_PATH}>Planet Observer</Link>
-      </li>
-    </ul>
+      <Header showThemeToggle={false} isMenuToggleActive={true} />
+      <ul>
+        <li>
+          <Link to={PLANET_OBSERVER_PATH}>Planet Observer</Link>
+        </li>
+      </ul>
     </>
   );
 };
 
-export default AboutProject;
+export default AboutProjectPage;
