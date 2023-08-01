@@ -1,16 +1,11 @@
-.menu-button {
-  background-color: var(--primary-color);
-  padding: 15px;
-  border-radius: 50%;
-  border: initial;
-  transition: initial;
-  font-family: initial;
-  font-size: 0em;
-  margin: 10px;
-}
-
 .page-header {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
+}
+
+@media (min-width: 769px) {
+  .page-header {
+    padding: 40px;
+  }
 }

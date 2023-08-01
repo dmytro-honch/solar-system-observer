@@ -1,11 +1,11 @@
 import { IconProps } from 'src/components/_common/icons/types';
 
-export const SwitchThemeIcon = ({ color, fontSize }: IconProps) => (
+export const SwitchThemeIcon = ({ color = 'inherit', size = 'inherit' }: IconProps) => (
   <svg
     width="50"
     height="50"
     viewBox="0 0 28 28"
-    style={{ fontSize, color, width: '1.2em', height: 'auto' }}
+    style={{ fontSize: size, color, width: '1em', height: 'auto' }}
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle cx="14.3923" cy="14.3923" r="6" fill="#CDCDCD" />

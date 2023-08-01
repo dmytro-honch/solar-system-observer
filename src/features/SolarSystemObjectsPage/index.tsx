@@ -6,7 +6,7 @@ import { Header } from 'src/components/Header/Header';
 const SolarSystemObjectsPage = () => {
   return (
     <>
-      <Header showThemeToggle={false} isMenuToggleActive={true} />
+      <Header isMenuActive={true} />
       <ul>
         <li>
           <Link to={PLANET_OBSERVER_PATH}>Planet Observer</Link>

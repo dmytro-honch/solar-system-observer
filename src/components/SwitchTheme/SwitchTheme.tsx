@@ -1,15 +1,14 @@
-import { useThemeChange } from './hook';
-
-import './SwitchTheme.css';
-
+import { IconicButton } from 'src/components/_common/IconicButton/IconicButton';
 import { SwitchThemeIcon } from 'src/components/_common/icons/SwitchThemeIcon';
 
+import { useSwitchTheme } from './hook';
+
 export const SwitchTheme = () => {
-  const handleThemeChange = useThemeChange();
+  const handleSwitchTheme = useSwitchTheme();
 
   return (
-    <button type="button" className="btn-theme-toggle" onClick={handleThemeChange}>
-      <SwitchThemeIcon color="white" fontSize={16} />
-    </button>
+    <IconicButton onClickHandler={handleSwitchTheme}>
+      <SwitchThemeIcon />
+    </IconicButton>
   );
 };

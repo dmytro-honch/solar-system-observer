@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom';
-import { PLANET_OBSERVER_PATH } from 'src/features/Router/path';
-import { CONTACT_US_PATH } from 'src/features/Router/path';
-import { ABOUT_US_PATH } from 'src/features/Router/path';
-import { SOLAR_SYSTEM_PATH } from 'src/features/Router/path';
-import { PROPOSE_CHANGES_PATH } from 'src/features/Router/path';
-import { SAY_THANKS_PATH } from 'src/features/Router/path';
+
+import {
+  PLANET_OBSERVER_PATH,
+  CONTACT_US_PATH,
+  ABOUT_US_PATH,
+  SOLAR_SYSTEM_PATH,
+  PROPOSE_CHANGES_PATH,
+  SAY_THANKS_PATH,
+} from 'src/features/Router/path';
 
 import './menu.css';
 

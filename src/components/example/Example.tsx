@@ -5,6 +5,7 @@ import './example.css';
 type ExamplePropType = {
   exampleProp?: string;
 };
+
 export const Example = ({ exampleProp }: ExamplePropType) => {
   const {
     isLoading,

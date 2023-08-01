@@ -1,0 +1,12 @@
+.iconic-button {
+  background-color: var(--menu-button-color);
+  padding: 6px;
+  border-radius: 50%;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--icon-color);
+}
+
+.iconic-button:hover {
+  color: var(--icon-color-active);
+}

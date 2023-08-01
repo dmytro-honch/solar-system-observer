@@ -1,15 +1,5 @@
 .btn-theme-toggle {
   background-color: #1a1a1a;
-  padding: 15px;
   border-radius: 50%;
-  border: initial;
-  transition: initial;
-  font-family: initial;
-  font-size: 0em;
   margin: 10px;
-}
-
-.btn-theme-toggle:focus,
-.btn-theme-toggle:focus-visible {
-  outline: none;
 }

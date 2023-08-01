@@ -1,19 +1,11 @@
-import { Link } from 'react-router-dom';
-import { PLANET_OBSERVER_PATH } from 'src/features/Router/path';
-
 import { Header } from 'src/components/Header/Header';
+import { About } from 'src/components/About/About';
 
-const AboutProjectPage = () => {
-  return (
-    <>
-      <Header showThemeToggle={false} isMenuToggleActive={true} />
-      <ul>
-        <li>
-          <Link to={PLANET_OBSERVER_PATH}>Planet Observer</Link>
-        </li>
-      </ul>
-    </>
-  );
-};
+const AboutProjectPage = () => (
+  <>
+    <Header isMenuActive={true} />
+    <About />
+  </>
+);
 
 export default AboutProjectPage;

@@ -1,11 +1,11 @@
 import { IconProps } from 'src/components/_common/icons/types';
 
-export const NormalScreenIcon = ({ color, fontSize }: IconProps) => (
+export const NormalScreenIcon = ({ color = 'inherit', size = 'inherit' }: IconProps) => (
   <svg
     width="28"
     height="28"
     viewBox="0 0 28 28"
-    style={{ fontSize, color, width: '1.2em', height: 'auto' }}
+    style={{ fontSize: size, color, width: '1em', height: 'auto' }}
     xmlns="http://www.w3.org/2000/svg"
   >
     <defs>

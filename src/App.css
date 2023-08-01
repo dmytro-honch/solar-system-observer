@@ -1,12 +1,14 @@
 :root {
   --light-font-color: #fff;
-  --bg-font-color: rgb(21 22 27);
+  --bg-font-color: #15161b;
   --bg-color: #15161b;
   --main-text-color-light: #000000;
-  --main-background-color-light: #ffffff;
+  --main-background-color-light: #c4c7ca;
   --main-text-color-dark: #ffffff;
   --main-background-color-dark: #242424;
-  --primary-color: #1a1a1a;
+  --menu-button-color: #1a1a1a;
+  --icon-color: #cdcdcd;
+  --icon-color-active: #cdcdcd;
 }
 
 [data-theme='light'] {
