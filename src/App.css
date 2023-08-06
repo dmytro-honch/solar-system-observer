@@ -25,16 +25,28 @@
 }
 
 [data-theme='light'] {
-  --text-color: var(--secondary-text-color-lt);
   --background-color: var(--background-color-lt);
+  --primary-text-color: var(--primary-text-color-lt);
+  --primary-element-color: var(--primary-element-color-lt);
+  --secondary-text-color: var(--secondary-text-color-lt);
+  --secondary-element-color: var(--secondary-element-color-lt);
+  --accent-text-color: var(--accent-text-color-lt);
+  --accent-element-color: var(--accent-element-color-lt);
+  --feature-color: var(--feature-color);
 }
 
 [data-theme='dark'] {
-  --text-color: var(--secondary-text-color-dt);
   --background-color: var(--background-color-dt);
+  --primary-text-color: var(--primary-text-color-dt);
+  --primary-element-color: var(--primary-element-color-dt);
+  --secondary-text-color: var(--secondary-text-color-dt);
+  --secondary-element-color: var(--secondary-element-color-dt);
+  --accent-text-color: var(--accent-text-color-dt);
+  --accent-element-color: var(--accent-element-color-dt);
+  --feature-color: var(--feature-color);
 }
 
 body {
-  color: var(--text-color);
+  color: var(--secondary-text-color);
   background-color: var(--background-color);
 }

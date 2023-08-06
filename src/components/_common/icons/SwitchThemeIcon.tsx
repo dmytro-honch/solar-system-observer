@@ -23,8 +23,9 @@ export const SwitchThemeIcon = ({ color = 'inherit', size = 'inherit' }: IconPro
     <path d="M12.1244 6.4641L8.66028 8.4641L8.39233 4L12.1244 6.4641Z" fill="#D9D9D9" />
 
     <defs>
-      <style>{'path { stroke: currentColor; stroke-width: 2; stroke-linecap: round; }'}</style>
-      <rect width="28" height="28" fill="white" />
+      <style>
+        {'path { stroke: currentColor; stroke-width: 2; stroke-linecap: round;} circle {fill: currentColor}'}
+      </style>
     </defs>
   </svg>
 );

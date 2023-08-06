@@ -1,41 +1,12 @@
 .iconic-button {
-  background-color: var(--primary-element-color-dt);
+  background-color: var(--primary-element-color);
   padding: 6px;
   border-radius: 50%;
   font-size: 28px;
   line-height: 1;
-  color: var(--secondary-text-color-dt);
+  color: var(--secondary-text-color);
 }
 
 .iconic-button:hover {
-  color: var(--primary-text-color-dt);
-}
-
-.iconic-button circle:hover {
-  fill: var(--primary-text-color-dt);
-}
-
-[data-theme='light'] {
-  .iconic-button {
-    background-color: var(--primary-element-color-lt);
-    color: var(--secondary-text-color-lt);
-  }
-}
-
-[data-theme='light'] {
-  .iconic-button:hover {
-    color: var(--primary-text-color-lt);
-  }
-}
-
-[data-theme='light'] {
-  .iconic-button circle {
-    fill: var(--secondary-text-color-lt);
-  }
-}
-
-[data-theme='light'] {
-  .iconic-button circle:hover {
-    fill: var(--primary-text-color-lt);
-  }
+  color: var(--primary-text-color);
 }

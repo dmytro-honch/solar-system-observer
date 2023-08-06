@@ -1,25 +1,12 @@
 .burger-button {
-  background-color: var(--primary-element-color-dt);
+  background-color: var(--primary-element-color);
   padding: 6px;
   border-radius: 50%;
   font-size: 28px;
   line-height: 1;
-  color: var(--secondary-text-color-dt);
+  color: var(--secondary-text-color);
 }
 
 .burger-button:hover {
-  color: var(--primary-text-color-dt);
-}
-
-[data-theme='light'] {
-  .burger-button {
-    background-color: var(--primary-element-color-lt);
-    color: var(--secondary-text-color-lt);
-  }
-}
-
-[data-theme='light'] {
-  .burger-button:hover {
-    color: var(--primary-text-color-lt);
-  }
+  color: var(--primary-text-color);
 }
