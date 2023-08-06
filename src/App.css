@@ -1,27 +1,40 @@
 :root {
-  --light-font-color: #fff;
-  --bg-font-color: #15161b;
-  --bg-color: #15161b;
-  --main-text-color-light: #000000;
-  --main-background-color-light: #c4c7ca;
-  --main-text-color-dark: #ffffff;
-  --main-background-color-dark: #242424;
-  --menu-button-color: #1a1a1a;
-  --icon-color: #cdcdcd;
-  --icon-color-active: #cdcdcd;
+  /* Dark theme colors: */
+  --background-color-dt: #15161b;
+  --primary-text-color-dt: #ffffff;
+  --primary-element-color-dt: #000000;
+  --secondary-text-color-dt: #cdcdcd;
+  --secondary-element-color-dt: rgba(0, 0, 0, 0.5); /* 50% opacity */
+  --accent-text-color-dt: #ffc700;
+  --accent-element-color-dt: #005585;
+
+  --icon-color-dt: #cdcdcd;
+  --icon-color-dt-active: #ffffff;
+
+  /* Light theme colors: */
+  --background-color-lt: #c4c7ca;
+  --primary-text-color-lt: #000000;
+  --primary-element-color-lt: #ffffff;
+  --secondary-text-color-lt: #333333;
+  --secondary-element-color-lt: rgba(0, 0, 0, 0.1); /* 10% opacity */
+  --accent-text-color-lt: #0080c8;
+  --accent-element-color-lt: #00a3ff;
+
+  /* Feature color: */
+  --feature-color: rgba(0, 85, 133, 0.8); /* 80% opacity */
 }
 
 [data-theme='light'] {
-  --main-text-color: var(--main-text-color-light);
-  --main-background-color: var(--main-background-color-light);
+  --text-color: var(--secondary-text-color-lt);
+  --background-color: var(--background-color-lt);
 }
 
 [data-theme='dark'] {
-  --main-text-color: var(--main-text-color-dark);
-  --main-background-color: var(--main-background-color-dark);
+  --text-color: var(--secondary-text-color-dt);
+  --background-color: var(--background-color-dt);
 }
 
 body {
-  color: var(--main-text-color);
-  background-color: var(--main-background-color);
+  color: var(--text-color);
+  background-color: var(--background-color);
 }

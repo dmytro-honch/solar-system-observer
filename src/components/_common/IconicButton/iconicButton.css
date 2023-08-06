@@ -1,12 +1,41 @@
 .iconic-button {
-  background-color: var(--menu-button-color);
+  background-color: var(--primary-element-color-dt);
   padding: 6px;
   border-radius: 50%;
   font-size: 28px;
   line-height: 1;
-  color: var(--icon-color);
+  color: var(--secondary-text-color-dt);
 }
 
 .iconic-button:hover {
-  color: var(--icon-color-active);
+  color: var(--primary-text-color-dt);
+}
+
+.iconic-button circle:hover {
+  fill: var(--primary-text-color-dt);
+}
+
+[data-theme='light'] {
+  .iconic-button {
+    background-color: var(--primary-element-color-lt);
+    color: var(--secondary-text-color-lt);
+  }
+}
+
+[data-theme='light'] {
+  .iconic-button:hover {
+    color: var(--primary-text-color-lt);
+  }
+}
+
+[data-theme='light'] {
+  .iconic-button circle {
+    fill: var(--secondary-text-color-lt);
+  }
+}
+
+[data-theme='light'] {
+  .iconic-button circle:hover {
+    fill: var(--primary-text-color-lt);
+  }
 }

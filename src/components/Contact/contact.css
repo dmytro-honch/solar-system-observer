@@ -14,9 +14,13 @@
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #000000;
-  color: #cdcdcd;
+  background-color: var(--primary-element-color-dt);
   margin-bottom: 30px;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--secondary-text-color-dt);
 }
 
 .form-textarea {
@@ -26,9 +30,30 @@
 
 .submit-btn {
   width: 100%;
-  background-color: #005585;
-  color: #cdcdcd;
+  background-color: var(--accent-element-color-dt);
+  color: var(--secondary-text-color-dt);
   border-radius: 20px;
+}
+
+[data-theme='light'] {
+  .form-input,
+  .form-textarea {
+    background-color: var(--primary-element-color-lt);
+  }
+}
+
+[data-theme='light'] {
+  .form-input::placeholder,
+  .form-textarea::placeholder {
+    color: var(--primary-text-color-lt);
+  }
+}
+
+[data-theme='light'] {
+  .submit-btn {
+    background-color: var(--accent-element-color-lt);
+    color: var(--secondary-text-color-lt);
+  }
 }
 
 @media (min-width: 769px) {
@@ -48,9 +73,13 @@
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #000000;
-    color: #cdcdcd;
+    background-color: var(--primary-element-color-dt);
     margin-bottom: 30px;
+  }
+
+  .form-input::placeholder,
+  .form-textarea::placeholder {
+    color: var(--secondary-text-color-dt);
   }
 
   .form-textarea {
@@ -60,8 +89,39 @@
 
   .submit-btn {
     width: 100%;
-    background-color: #005585;
-    color: #cdcdcd;
+    background-color: var(--accent-element-color-dt);
+    color: var(--secondary-text-color-dt);
     border-radius: 20px;
+  }
+
+  .submit-btn:hover {
+    color: var(--primary-text-color-dt);
+  }
+
+  [data-theme='light'] {
+    .form-input,
+    .form-textarea {
+      background-color: var(--primary-element-color-lt);
+    }
+  }
+
+  [data-theme='light'] {
+    .form-input::placeholder,
+    .form-textarea::placeholder {
+      color: var(--primary-text-color-lt);
+    }
+  }
+
+  [data-theme='light'] {
+    .submit-btn {
+      background-color: var(--accent-element-color-lt);
+      color: var(--secondary-text-color-lt);
+    }
+  }
+
+  [data-theme='light'] {
+    .submit-btn:hover {
+      color: var(--primary-text-color-lt);
+    }
   }
 }

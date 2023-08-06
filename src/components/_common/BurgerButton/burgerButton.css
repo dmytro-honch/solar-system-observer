@@ -1,12 +1,25 @@
 .burger-button {
-  background-color: var(--menu-button-color);
+  background-color: var(--primary-element-color-dt);
   padding: 6px;
   border-radius: 50%;
   font-size: 28px;
   line-height: 1;
-  color: var(--icon-color);
+  color: var(--secondary-text-color-dt);
 }
 
 .burger-button:hover {
-  color: var(--icon-color-active);
+  color: var(--primary-text-color-dt);
+}
+
+[data-theme='light'] {
+  .burger-button {
+    background-color: var(--primary-element-color-lt);
+    color: var(--secondary-text-color-lt);
+  }
+}
+
+[data-theme='light'] {
+  .burger-button:hover {
+    color: var(--primary-text-color-lt);
+  }
 }
