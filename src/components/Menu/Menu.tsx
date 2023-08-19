@@ -26,7 +26,7 @@ export const Menu = () => {
       </li>
       <li>
         <Link to={ABOUT_US_PATH} className="menu-links">
-          About us
+          About Us
         </Link>
       </li>
       <li>
