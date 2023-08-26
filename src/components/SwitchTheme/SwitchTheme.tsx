@@ -3,12 +3,20 @@ import { SwitchThemeIcon } from 'src/components/_common/icons/SwitchThemeIcon';
 
 import { useSwitchTheme } from './hook';
 
-export const SwitchTheme = () => {
+type SwitchProps = {
+  showIcon?: boolean;
+};
+
+export const SwitchTheme = ({ showIcon }: SwitchProps) => {
   const handleSwitchTheme = useSwitchTheme();
 
   return (
-    <IconicButton onClickHandler={handleSwitchTheme}>
-      <SwitchThemeIcon />
-    </IconicButton>
+    <>
+      {showIcon && (
+        <IconicButton onClickHandler={handleSwitchTheme}>
+          <SwitchThemeIcon />
+        </IconicButton>
+      )}
+    </>
   );
 };

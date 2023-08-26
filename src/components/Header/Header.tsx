@@ -12,7 +12,7 @@ export const Header = ({ showThemeToggle, isMenuActive }: HeaderProps) => {
   return (
     <header className="page-header">
       <BurgerButton isMenuToggleActive={!!isMenuActive} />
-      {showThemeToggle && <SwitchTheme />}
+      <SwitchTheme showIcon={showThemeToggle} />
     </header>
   );
 };
