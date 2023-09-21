@@ -1,8 +1,6 @@
 .menu-page {
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 340px;
+  padding: 0;
 }
 
 .menu-page li:not(:last-child) {
@@ -25,27 +23,7 @@
 
 @media (min-width: 769px) {
   .menu-page {
-    margin: 0 auto;
-    padding: 0;
     width: 400px;
-  }
-
-  .menu-page li:not(:last-child) {
-    margin-bottom: 30px;
-  }
-
-  .menu-page li {
-    list-style-type: none;
-  }
-
-  .menu-links {
-    text-align: center;
-    padding: 10px 0;
-    background-color: var(--primary-element-color);
-    border-radius: 30px;
-    display: block;
-    text-decoration: none;
-    color: var(--secondary-text-color);
   }
 
   .menu-links:hover {

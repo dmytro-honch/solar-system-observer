@@ -20,8 +20,10 @@
   --accent-text-color-lt: #0080c8;
   --accent-element-color-lt: #00a3ff;
 
-  /* Feature color: */
+  /* Feature*/
   --feature-color: rgba(0, 85, 133, 0.8); /* 80% opacity */
+  --container-border-radius: 20px;
+  --container-border-raduis-m: 20px;
 }
 
 [data-theme='light'] {

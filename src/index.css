@@ -47,3 +47,24 @@ img {
   height: auto;
   vertical-align: bottom;
 }
+
+#root {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  #root {
+    padding: 40px;
+  }
+}
+
+div,
+table,
+ul,
+li,
+svg,
+img,
+a,
+button {
+  box-sizing: border-box;
+}

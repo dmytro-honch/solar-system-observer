@@ -1,6 +1,4 @@
 .contact-form {
-  width: 340px;
-  height: 610px;
   margin: 0 auto;
 }
 
@@ -9,10 +7,8 @@
   width: 100%;
   box-sizing: border-box;
   border-radius: 20px;
-  border: 1px solid transparent;
   padding: 10px 20px;
   font-size: 1em;
-  font-weight: 500;
   font-family: inherit;
   background-color: var(--primary-element-color);
   margin-bottom: 30px;
@@ -21,11 +17,6 @@
 .form-input::placeholder,
 .form-textarea::placeholder {
   color: var(--secondary-text-color);
-}
-
-.form-textarea {
-  resize: none;
-  padding: 10px 20px;
 }
 
 .submit-btn {
@@ -38,39 +29,6 @@
 @media (min-width: 769px) {
   .contact-form {
     width: 400px;
-    height: 610px;
-    margin: 0 auto;
-  }
-
-  .form-input,
-  .form-textarea {
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 20px;
-    border: 1px solid transparent;
-    padding: 10px 20px;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: var(--primary-element-color);
-    margin-bottom: 30px;
-  }
-
-  .form-input::placeholder,
-  .form-textarea::placeholder {
-    color: var(--secondary-text-color);
-  }
-
-  .form-textarea {
-    resize: none;
-    padding: 10px 20px;
-  }
-
-  .submit-btn {
-    width: 100%;
-    background-color: var(--accent-element-color);
-    color: var(--secondary-text-color);
-    border-radius: 20px;
   }
 
   .submit-btn:hover {

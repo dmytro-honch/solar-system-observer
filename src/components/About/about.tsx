@@ -5,11 +5,11 @@ export const About = () => {
     <div className="about-wrapper">
       <h2 className="about-title">About</h2>
       <div className="about-text">
-        <div>
+        <p>
           About Welcome to our non-profit project, "Exploring the Solar System"! We are Dmytro Honcharov and Oleksii
           Moroz, two passionate software developers with a shared fascination for the vastness and beauty of our cosmic
           neighborhood.
-        </div>
+        </p>
         <p>
           Our goal is to provide an interactive and educational experience that enables people to grasp the true scale
           of the Solar System. We believe that understanding the distances between celestial bodies can enhance our
@@ -35,9 +35,9 @@ export const About = () => {
           aims to ignite your imagination and deepen your understanding of our celestial neighbors. Thank you for
           visiting "Exploring the Solar System." We hope you enjoy your journey through the vastness of space!
         </p>
-        <div>We used here next resources:</div>
+        <p>We used here next resources:</p>
         <a href="https://en.wikipedia.org/wiki/List_of_Solar_System_objects_by_size" target="_blank">
-          https://en.wikipedia.org/wiki/List_of_Solar_System_objects_by_size
+          List of Solar System objects by size
         </a>
       </div>
     </div>
