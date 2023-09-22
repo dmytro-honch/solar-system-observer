@@ -1,7 +1,7 @@
 .about-wrapper {
   margin: 0 auto;
-  border-radius: var(--container-border-radius);
   background-color: var(--primary-element-color);
+  border-radius: var(--container-border-radius);
 }
 
 .about-title {

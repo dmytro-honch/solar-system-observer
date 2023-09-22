@@ -8,7 +8,7 @@ export const SwitchThemeIcon = ({ color = 'inherit', size = 'inherit' }: IconPro
     style={{ fontSize: size, color, width: '1em', height: 'auto' }}
     xmlns="http://www.w3.org/2000/svg"
   >
-    <circle cx="14.3923" cy="14.3923" r="6" fill="#CDCDCD" />
+    <circle cx="14.3923" cy="14.3923" r="6" />
     <path d="M16.3923 6.39233H12.3923L14.3923 2.39233L16.3923 6.39233Z" fill="#D9D9D9" />
     <path d="M12.3923 22.3923L16.3923 22.3923L14.3923 26.3923L12.3923 22.3923Z" fill="#D9D9D9" />
     <path d="M22.3923 16.3923L22.3923 12.3923L26.3923 14.3923L22.3923 16.3923Z" fill="#D9D9D9" />

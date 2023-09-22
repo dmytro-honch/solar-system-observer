@@ -4,7 +4,7 @@
   --primary-text-color-dt: #ffffff;
   --primary-element-color-dt: #000000;
   --secondary-text-color-dt: #cdcdcd;
-  --secondary-element-color-dt: rgba(0, 0, 0, 0.5); /* 50% opacity */
+  --secondary-element-color-dt: rgba(0, 0, 0, 0.5);
   --accent-text-color-dt: #ffc700;
   --accent-element-color-dt: #005585;
 
@@ -16,12 +16,12 @@
   --primary-text-color-lt: #000000;
   --primary-element-color-lt: #ffffff;
   --secondary-text-color-lt: #333333;
-  --secondary-element-color-lt: rgba(0, 0, 0, 0.1); /* 10% opacity */
+  --secondary-element-color-lt: rgba(0, 0, 0, 0.1);
   --accent-text-color-lt: #0080c8;
   --accent-element-color-lt: #00a3ff;
 
   /* Feature*/
-  --feature-color: rgba(0, 85, 133, 0.8); /* 80% opacity */
+  --feature-color: rgba(0, 85, 133, 0.8);
   --container-border-radius: 20px;
   --container-border-raduis-m: 20px;
 }

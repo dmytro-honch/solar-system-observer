@@ -2,29 +2,21 @@ import './contact.css';
 
 export const Contact = () => {
   return (
-    <form className="contact-form">
-      <input className="form-input" type="text" id="name" name="name" placeholder="Your name (optional)" required />
-
-      <input
-        className="form-input"
-        type="text"
-        id="contact"
-        name="contact"
-        placeholder="How to contact (optional)"
-        required
-      />
-
-      <textarea
-        className="form-textarea"
-        id="message"
-        name="message"
-        rows="18"
-        placeholder="Your message to us"
-        required
-      />
-      <button className="submit-btn" type="submit">
-        Send
-      </button>
-    </form>
+    <div className="contact-form">
+      <form>
+        <div className="form-input">
+          <input type="text" id="name" name="name" placeholder="Your name (optional)" required />
+        </div>
+        <div className="form-input">
+          <input type="text" id="contact" name="contact" placeholder="How to contact (optional)" required />
+        </div>
+        <div className="form-textarea">
+          <textarea id="message" name="message" rows="18" placeholder="Your message to us" required />
+        </div>
+        <div className="submit-btn">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
   );
 };

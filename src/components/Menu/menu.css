@@ -12,17 +12,17 @@
 }
 
 .menu-links {
-  text-align: center;
+  display: block;
   padding: 10px 0;
+  color: var(--secondary-text-color);
   background-color: var(--primary-element-color);
   border-radius: 30px;
-  display: block;
-  text-decoration: none;
-  color: var(--secondary-text-color);
+  text-align: center;
 }
 
 @media (min-width: 769px) {
   .menu-page {
+    max-width: 100%;
     width: 400px;
   }
 
