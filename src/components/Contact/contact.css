@@ -14,7 +14,6 @@
   border-radius: 20px;
   font-size: 1em;
   font-family: inherit;
-  resize: none;
 }
 
 .form-input input[type='text']::placeholder,
@@ -28,6 +27,16 @@
   background-color: var(--accent-element-color);
   color: var(--secondary-text-color);
   border-radius: 20px;
+}
+
+[data-theme='dark'] textarea,
+input {
+  color: #ffffff;
+}
+
+[data-theme='light'] textarea,
+input {
+  color: #000000;
 }
 
 @media (min-width: 769px) {
