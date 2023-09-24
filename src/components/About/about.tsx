@@ -2,7 +2,7 @@ import './about.css';
 
 export const About = () => {
   return (
-    <div className="about-wrapper">
+    <div className="page-wrapper">
       <h2 className="about-title">About</h2>
       <div className="about-text">
         <p>

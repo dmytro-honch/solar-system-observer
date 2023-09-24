@@ -1,4 +1,4 @@
-.about-wrapper {
+.page-wrapper {
   margin: 0 auto;
   background-color: var(--primary-element-color);
   border-radius: var(--container-border-radius);
@@ -11,7 +11,7 @@
 }
 
 .about-text {
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
   color: var(--secondary-text-color);
 }
 
@@ -20,15 +20,15 @@
 }
 
 .about-text p:last-of-type {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .about-title {
     padding: 40px 40px 0 40px;
   }
 
   .about-text {
-    padding: 0 40px 0 40px;
+    padding: 0 40px;
   }
 }

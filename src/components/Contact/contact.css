@@ -29,17 +29,12 @@
   border-radius: 20px;
 }
 
-[data-theme='dark'] textarea,
+textarea,
 input {
-  color: #ffffff;
+  color: var(--form-color);
 }
 
-[data-theme='light'] textarea,
-input {
-  color: #000000;
-}
-
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .contact-form {
     width: 400px;
     max-width: 100%;

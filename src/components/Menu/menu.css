@@ -20,7 +20,7 @@
   text-align: center;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .menu-page {
     max-width: 100%;
     width: 400px;

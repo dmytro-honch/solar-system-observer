@@ -4,7 +4,7 @@ import { SwitchThemeIcon } from 'src/components/_common/icons/SwitchThemeIcon';
 import { useSwitchTheme } from './hook';
 
 type SwitchProps = {
-  showIcon?: boolean;
+  showIcon: boolean;
 };
 
 export const SwitchTheme = ({ showIcon }: SwitchProps) => {

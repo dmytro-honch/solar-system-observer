@@ -11,6 +11,8 @@
   --icon-color-dt: #cdcdcd;
   --icon-color-dt-active: #ffffff;
 
+  --form-color-dt: #ffffff;
+
   /* Light theme colors: */
   --background-color-lt: #c4c7ca;
   --primary-text-color-lt: #000000;
@@ -20,10 +22,14 @@
   --accent-text-color-lt: #0080c8;
   --accent-element-color-lt: #00a3ff;
 
+  --form-color-lt: #000000;
+
   /* Feature*/
   --feature-color: rgba(0, 85, 133, 0.8);
   --container-border-radius: 20px;
   --container-border-raduis-m: 20px;
+
+  --icon-font-size: 28px;
 }
 
 [data-theme='light'] {
@@ -35,6 +41,8 @@
   --accent-text-color: var(--accent-text-color-lt);
   --accent-element-color: var(--accent-element-color-lt);
   --feature-color: var(--feature-color);
+  --form-color: var(--form-color-lt);
+  --icons-font-size: var(--icon-font-size);
 }
 
 [data-theme='dark'] {
@@ -46,6 +54,8 @@
   --accent-text-color: var(--accent-text-color-dt);
   --accent-element-color: var(--accent-element-color-dt);
   --feature-color: var(--feature-color);
+  --form-color: var(--form-color-dt);
+  --icons-font-size: var(--icon-font-size);
 }
 
 body {
