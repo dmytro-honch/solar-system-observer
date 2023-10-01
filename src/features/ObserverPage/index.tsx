@@ -13,7 +13,7 @@ const ObserverPage = () => {
 
   return (
     <>
-      <Header />
+      <Header showMenu={true} />
       <Example />
       <PlanetObserver date={date} angleX={angleX} angleY={angleY} displayMode={displayMode} scale={scale} />
     </>

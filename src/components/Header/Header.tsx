@@ -5,13 +5,13 @@ import './header.css';
 
 type HeaderProps = {
   showThemeToggle?: boolean;
-  isMenuActive?: boolean;
+  showMenu?: boolean;
 };
 
-export const Header = ({ showThemeToggle, isMenuActive }: HeaderProps) => {
+export const Header = ({ showThemeToggle, showMenu }: HeaderProps) => {
   return (
     <header className="page-header">
-      <BurgerButton isMenuToggleActive={!!isMenuActive} />
+      <BurgerButton isMenuToggleActive={!!showMenu} />
       <SwitchTheme showIcon={showThemeToggle || false} />
     </header>
   );
