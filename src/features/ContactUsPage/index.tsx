@@ -4,7 +4,7 @@ import { Contact } from 'src/components/Contact/Contact';
 const ContactUsPage = () => {
   return (
     <>
-      <Header showThemeToggle={false} isMenuActive={true} />
+      <Header showThemeToggle={false} isMenuActive={false} />
       <Contact />
     </>
   );
