@@ -1,17 +1,12 @@
 .wrapper {
-    max-width: 100%;
-    width: 800px;
-    margin: 0 auto;
-}
-
-.heading {
-    color: var(--light-font-color);
-    background-color: var(--bg-font-color);
+  max-width: 100%;
+  width: 800px;
+  margin: 0 auto;
 }
 
 .option-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
 }

@@ -1,0 +1,11 @@
+.page-header {
+  justify-content: space-between;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    padding-bottom: 40px;
+  }
+}

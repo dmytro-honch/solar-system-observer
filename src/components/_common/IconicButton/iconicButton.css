@@ -1,0 +1,12 @@
+.header-buttons {
+  padding: 6px;
+  border-radius: 50%;
+  font-size: var(--icons-font-size);
+  background-color: var(--primary-element-color);
+  color: var(--secondary-text-color);
+  line-height: 1;
+}
+
+.header-buttons:hover {
+  color: var(--primary-text-color);
+}

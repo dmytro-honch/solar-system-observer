@@ -1,9 +1,5 @@
-.planet-observer__wrapper {
-    background-color: var(--bg-color);
-}
-
 .planet-observer {
-    display: block;
-    width: 100%;
-    height: 100vh;
+  display: block;
+  width: 100%;
+  height: 100vh;
 }

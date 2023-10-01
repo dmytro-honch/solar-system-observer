@@ -1,7 +1,8 @@
-import { Example } from 'src/components/example/example';
-import { PlanetObserver } from 'src/components/planetObserver/PlanetObserver';
+import { Example } from 'src/components/Example/Example';
+import { PlanetObserver } from 'src/components/PlanetObserver/PlanetObserver';
 import { displayModes } from 'src/constants';
 
+import { Header } from 'src/components/Header/Header';
 
 const ObserverPage = () => {
   const date = new Date();
@@ -12,6 +13,7 @@ const ObserverPage = () => {
 
   return (
     <>
+      <Header />
       <Example />
       <PlanetObserver date={date} angleX={angleX} angleY={angleY} displayMode={displayMode} scale={scale} />
     </>

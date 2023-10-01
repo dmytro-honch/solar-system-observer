@@ -1,0 +1,32 @@
+.menu-page {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.menu-page li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.menu-page li {
+  list-style-type: none;
+}
+
+.menu-links {
+  display: block;
+  padding: 10px 0;
+  color: var(--secondary-text-color);
+  background-color: var(--primary-element-color);
+  border-radius: 30px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .menu-page {
+    max-width: 100%;
+    width: 400px;
+  }
+
+  .menu-links:hover {
+    color: var(--primary-text-color);
+  }
+}
