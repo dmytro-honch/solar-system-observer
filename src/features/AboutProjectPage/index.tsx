@@ -3,7 +3,7 @@ import { About } from 'src/components/About/About';
 
 const AboutProjectPage = () => (
   <>
-    <Header isMenuActive={true} />
+    <Header showMenu={true} />
     <About />
   </>
 );

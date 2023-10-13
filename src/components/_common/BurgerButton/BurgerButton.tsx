@@ -12,8 +12,8 @@ type BurgerButtonProps = {
 
 export const BurgerButton = ({ isMenuToggleActive }: BurgerButtonProps) => {
   return (
-    <Link to={isMenuToggleActive ? PLANET_OBSERVER_PATH : MENU_PATH} className="header-buttons">
-      {isMenuToggleActive ? <BackArrow /> : <BurgerIcon />}
+    <Link to={isMenuToggleActive ? MENU_PATH : PLANET_OBSERVER_PATH} className="header-buttons">
+      {isMenuToggleActive ? <BurgerIcon /> : <BackArrow />}
     </Link>
   );
 };

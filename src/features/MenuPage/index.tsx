@@ -4,7 +4,7 @@ import { Menu } from 'src/components/Menu/Menu';
 const MenuPage = () => {
   return (
     <>
-      <Header showThemeToggle={true} isMenuActive={true} />
+      <Header showThemeToggle={true} showMenu={false} />
       <Menu />
     </>
   );
