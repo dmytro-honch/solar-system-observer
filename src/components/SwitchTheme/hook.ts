@@ -1,25 +1,27 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useEffect, useCallback } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { selectTheme } from 'src/store/selectors/switchTheme';
+import { toggleTheme } from 'src/store/slices/switchTheme';
 import { THEMES } from 'src/constants';
 
 export const useSwitchTheme = () => {
-  const defaultTheme = window.matchMedia('(prefers-color-scheme: dark)')?.matches ? THEMES.dark : THEMES.light;
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || defaultTheme);
+  const dispatch = useDispatch();
+  const theme = useSelector(selectTheme);
 
-  const applyThemeStyles = (currentTheme) => {
+  const applyThemeStyles = useCallback((currentTheme) => {
     const body = document.body;
     body.setAttribute('data-theme', currentTheme);
-  };
+  }, []);
 
   useEffect(() => {
     applyThemeStyles(theme);
-  }, [theme]);
+  }, [applyThemeStyles, theme]);
 
   const handleSwitchTheme = useCallback(() => {
     const newTheme = theme === THEMES.dark ? THEMES.light : THEMES.dark;
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
+    dispatch(toggleTheme(newTheme));
     applyThemeStyles(newTheme);
-  }, [theme]);
+  }, [dispatch, applyThemeStyles, theme]);
 
   return handleSwitchTheme;
 };
