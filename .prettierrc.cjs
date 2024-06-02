@@ -19,5 +19,6 @@ module.exports = {
   unusedImports: false,
   importedCss: true,
   sortImports: false,
-  'object-curly-newline': 'auto'
+  'object-curly-newline': 'auto',
+  'length-zero-no-unit': true,
 }

@@ -7,7 +7,7 @@ export const usePlanetObserver = (scale: number, angleY: number, angleX: number,
   useEffect(() => {
     if (!ref.current) return;
     initObserver(ref.current, scale, angleY, angleX, displayMode, date);
-  }, [ref.current]);
+  }, [angleX, angleY, date, displayMode, scale]);
 
   return {
     ref,
