@@ -6,11 +6,12 @@ import './header.css';
 type HeaderProps = {
   showMenu?: boolean;
   showThemeToggle?: boolean;
+  onBurgerClick: () => void;
 };
 
-export const Header = ({ showThemeToggle = false, showMenu = false }: HeaderProps) => (
+export const Header = ({ showThemeToggle = false, showMenu = false, onBurgerClick }: HeaderProps) => (
   <header className="page-header">
-    <BurgerButton isMenuToggleActive={!!showMenu} />
+    <BurgerButton isMenuToggleActive={showMenu} onClick={onBurgerClick} />
     <SwitchTheme showIcon={showThemeToggle || false} />
   </header>
 );

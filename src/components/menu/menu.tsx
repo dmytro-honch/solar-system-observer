@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { PLANET_OBSERVER_PATH, CONTACT_US_PATH, ABOUT_US_PATH } from 'src/features/router/path';
+import { ABOUT_US_PATH, CONTACT_US_PATH, PLANET_OBSERVER_PATH } from 'src/features/router/path';
 
 import './menu.css';
 
@@ -12,15 +12,17 @@ const links = [
 ];
 
 export const Menu = () => (
-  <ul className="menu-page">
-    {links.map((link, index) => (
-      <li key={index}>
-        {
-          <Link to={link.path} className="menu-links">
-            {link.label}
-          </Link>
-        }
-      </li>
-    ))}
-  </ul>
+  <div className="menu-modal">
+    <div className="menu-content">
+      <ul className="menu-page">
+        {links.map((link, index) => (
+          <li key={index}>
+            <Link to={link.path} className="menu-links">
+              {link.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
 );
