@@ -12,6 +12,7 @@
     "prepare": "husky install",
     "start": "vite",
     "storybook": "storybook dev -p 6006",
+    "test:components": "node scripts/check-tests.js",
     "test": "jest"
   },
   "dependencies": {
@@ -72,5 +73,10 @@
     "typescript": "^5.0.2",
     "typescript-eslint": "^7.11.0",
     "vite-jest": "^0.1.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test:components && yarn test"
+    }
   }
 }
