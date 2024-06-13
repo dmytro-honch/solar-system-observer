@@ -1,8 +1,6 @@
 import { PlanetObserver } from 'src/components/planetObserver/planetObserver.tsx';
 import { displayModes } from 'src/constants';
 
-import { Header } from 'src/components/header/header.tsx';
-
 const ObserverPage = () => {
   const date = new Date();
   const scale = 1;
@@ -12,7 +10,6 @@ const ObserverPage = () => {
 
   return (
     <>
-      <Header showMenu={true} />
       <PlanetObserver date={date} angleX={angleX} angleY={angleY} displayMode={displayMode} scale={scale} />
     </>
   );

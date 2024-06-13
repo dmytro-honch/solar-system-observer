@@ -8,7 +8,7 @@ type IconicButtonProps = {
 };
 
 export const IconicButton = ({ onClickHandler, children }: IconicButtonProps) => (
-  <button type="button" className="header-buttons" onClick={onClickHandler}>
+  <button type="button" className="header-buttons switch-theme-button" onClick={onClickHandler}>
     {children}
   </button>
 );
