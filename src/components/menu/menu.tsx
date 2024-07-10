@@ -1,33 +1,16 @@
-import { Link } from 'react-router-dom';
-import ReactDOM from 'react-dom';
-
-import { ABOUT_US_PATH, CONTACT_US_PATH, PLANET_OBSERVER_PATH } from 'src/features/router/path';
 import { BackArrow } from 'src/components/_common/icons/backArrow.tsx';
 import { SwitchTheme } from 'src/components/switchTheme/switchTheme.tsx';
-
-import './menu.css';
-
-const links = [
-  { path: PLANET_OBSERVER_PATH, label: 'Planet Observer' },
-  { path: ABOUT_US_PATH, label: 'About Us' },
-  { path: CONTACT_US_PATH, label: 'Contact Us' },
-  { path: '/unlivable_url', label: 'Page404' },
-];
+import { Link } from 'react-router-dom';
+import { links } from 'src/components/menu/menuDisplay.tsx';
 
 type MenuProps = {
-  onClose: () => void;
+  clickOnMenu: () => void;
 };
 
-export const Menu: React.FC<MenuProps> = ({ onClose }) => {
-  const modalRoot = document.getElementById('modal-root');
-  if (!modalRoot) {
-    console.error('The element with id "modal-root" does not exist in the DOM.');
-    return null;
-  }
-
-  return ReactDOM.createPortal(
-    <>
-      <button className="header-buttons menu-close-button" onClick={onClose}>
+export const Menu = ({ clickOnMenu }: MenuProps) => {
+  return (
+    <div className="header-wrapper">
+      <button className="header-buttons menu-close-button" onClick={clickOnMenu}>
         <BackArrow />
       </button>
       <SwitchTheme />
@@ -44,7 +27,6 @@ export const Menu: React.FC<MenuProps> = ({ onClose }) => {
           </ul>
         </div>
       </div>
-    </>,
-    modalRoot,
+    </div>
   );
 };

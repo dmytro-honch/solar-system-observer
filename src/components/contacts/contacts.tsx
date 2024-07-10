@@ -2,7 +2,7 @@ import './contacts.css';
 
 export const Contacts = () => (
   <div className="contact-form">
-    <form>
+    <form data-testid="contact-form">
       <div className="form-input">
         <input type="text" id="name" name="name" placeholder="Your name (optional)" required />
       </div>

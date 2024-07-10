@@ -4,9 +4,6 @@ import planetObserver from './planetObserver';
 import switchTheme from './switchTheme';
 import menuButton from './menuButton';
 
-export { planetObserverSlice } from './planetObserver';
-export { switchThemeSlice } from './switchTheme';
-
 const rootReducer = combineReducers({
   planetObserver,
   switchTheme,

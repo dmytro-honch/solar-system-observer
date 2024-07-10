@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { BurgerIcon } from 'src/components/_common/icons/burgerIcon.tsx';
-import { Menu } from 'src/components/menu/menu.tsx';
+import { MenuDisplay } from 'src/components/menu/menuDisplay.tsx';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectMenu } from 'src/store/selectors/menuButton.ts';
 import { closeMenu, openMenu } from 'src/store/slices/menuButton.ts';
@@ -39,7 +39,7 @@ export const MenuButton = () => {
           <BurgerIcon />
         </button>
       )}
-      {showMenu && <Menu onClose={handleToggleMenu} />}
+      {showMenu && <MenuDisplay onClose={handleToggleMenu} />}
     </>
   );
 };
