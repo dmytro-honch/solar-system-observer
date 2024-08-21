@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { MenuButtonStateType } from 'src/types/menuButton.ts';
+import { MenuButtonStateType } from 'src/types';
 
 const initialState: MenuButtonStateType = {
   showMenu: false,

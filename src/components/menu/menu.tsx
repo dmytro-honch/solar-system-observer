@@ -1,11 +1,8 @@
 import { BackArrow } from 'src/components/_common/icons/backArrow.tsx';
 import { SwitchTheme } from 'src/components/switchTheme/switchTheme.tsx';
 import { Link } from 'react-router-dom';
-import { links } from 'src/components/menu/menuDisplay.tsx';
-
-type MenuProps = {
-  clickOnMenu: () => void;
-};
+import { links } from 'src/components/menu/portal.tsx';
+import { MenuProps } from 'src/types';
 
 export const Menu = ({ clickOnMenu }: MenuProps) => {
   return (

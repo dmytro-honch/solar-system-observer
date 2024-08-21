@@ -6,6 +6,7 @@ import ContactUsPage from 'src/features/contactUsPage';
 import AboutProjectPage from 'src/features/aboutProjectPage';
 
 import { MenuButton } from 'src/components/menuButton/menuButton.tsx';
+import { SwitchTheme } from 'src/components/switchTheme/switchTheme.tsx';
 
 import './index.css';
 
@@ -14,7 +15,7 @@ import { ABOUT_US_PATH, CONTACT_US_PATH, FALLBACK_404_ROUTE, PLANET_OBSERVER_PAT
 const Router = () => (
   <BrowserRouter>
     <MenuButton />
-    {/*<SwitchTheme />*/}
+    <SwitchTheme />
     <Routes>
       <Route path={PLANET_OBSERVER_PATH} element={<ObserverPage />} />
       <Route path={ABOUT_US_PATH} element={<AboutProjectPage />} />
