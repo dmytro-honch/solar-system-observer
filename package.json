@@ -14,7 +14,7 @@
     "storybook": "storybook dev -p 6006",
     "test:components": "node scripts/check-tests.js",
     "test": "vitest",
-    "test-commit": "vitest run"
+    "test-pre-commit": "vitest run"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",

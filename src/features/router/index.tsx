@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import ObserverPage from 'src/features/observerPage';
+import HistoryPage from 'src/features/historyPage';
 import Page404 from 'src/features/page404';
 import ContactUsPage from 'src/features/contactUsPage';
 import AboutProjectPage from 'src/features/aboutProjectPage';
@@ -10,14 +10,14 @@ import { SwitchTheme } from 'src/components/switchTheme/switchTheme.tsx';
 
 import './index.css';
 
-import { ABOUT_US_PATH, CONTACT_US_PATH, FALLBACK_404_ROUTE, PLANET_OBSERVER_PATH } from './path';
+import { ABOUT_US_PATH, CONTACT_US_PATH, FALLBACK_404_ROUTE, HISTORY_OBSERVER_PATH } from './path';
 
 const Router = () => (
   <BrowserRouter>
     <MenuButton />
     <SwitchTheme />
     <Routes>
-      <Route path={PLANET_OBSERVER_PATH} element={<ObserverPage />} />
+      <Route path={HISTORY_OBSERVER_PATH} element={<HistoryPage />} />
       <Route path={ABOUT_US_PATH} element={<AboutProjectPage />} />
       <Route path={FALLBACK_404_ROUTE} element={<Page404 />} />
       <Route path={CONTACT_US_PATH} element={<ContactUsPage />} />
