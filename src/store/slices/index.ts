@@ -2,13 +2,12 @@ import { combineReducers } from '@reduxjs/toolkit';
 
 import planetObserver from './planetObserver';
 import switchTheme from './switchTheme';
-
-export { planetObserverSlice } from './planetObserver';
-export { switchThemeSlice } from './switchTheme';
+import menuButton from './menuButton';
 
 const rootReducer = combineReducers({
   planetObserver,
   switchTheme,
+  menuButton,
 });
 
 export type RootStateType = ReturnType<typeof rootReducer>;

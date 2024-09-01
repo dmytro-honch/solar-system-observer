@@ -1,12 +1,19 @@
 import { IconProps } from 'src/components/_common/icons/types';
 
-export const BackArrow = ({ color = 'inherit', size = 'inherit' }: IconProps) => (
+export const CloseIcon = ({
+  color = 'inherit',
+  size = 'inherit',
+  'data-testid': dataTestId,
+}: IconProps & {
+  'data-testid'?: string;
+}) => (
   <svg
     width="28"
     height="28"
     viewBox="0 0 28 28"
     style={{ fontSize: size, color, width: '1em', height: 'auto' }}
     xmlns="http://www.w3.org/2000/svg"
+    data-testid={dataTestId}
   >
     <defs>
       <style>{'path { stroke: currentColor; stroke-width: 2; stroke-linecap: round; }'}</style>

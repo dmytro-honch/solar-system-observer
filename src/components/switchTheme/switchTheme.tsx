@@ -2,17 +2,16 @@ import { IconicButton } from 'src/components/_common/iconicButton/iconicButton.t
 import { SwitchThemeIcon } from 'src/components/_common/icons/switchThemeIcon.tsx';
 
 import { useSwitchTheme } from './hook';
+import { useSelector } from 'react-redux';
+import { selectMenu } from 'src/store/selectors/menuButton.ts';
 
-type SwitchProps = {
-  showIcon: boolean;
-};
-
-export const SwitchTheme = ({ showIcon }: SwitchProps) => {
+export const SwitchTheme = () => {
   const handleSwitchTheme = useSwitchTheme();
+  const isMenuActive = useSelector(selectMenu);
 
   return (
     <>
-      {showIcon && (
+      {isMenuActive && (
         <IconicButton onClickHandler={handleSwitchTheme}>
           <SwitchThemeIcon />
         </IconicButton>
