@@ -17,7 +17,7 @@ const Router = () => (
     <MenuButton />
     <SwitchTheme />
     <Routes>
-      <Route path={HISTORY_OBSERVER_PATH} element={<HistoryPage />} />
+      <Route path={HISTORY_OBSERVER_PATH + ':data?'} element={<HistoryPage />} />
       <Route path={ABOUT_US_PATH} element={<AboutProjectPage />} />
       <Route path={FALLBACK_404_ROUTE} element={<Page404 />} />
       <Route path={CONTACT_US_PATH} element={<ContactUsPage />} />
