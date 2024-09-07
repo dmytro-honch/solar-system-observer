@@ -1,4 +1,4 @@
-import { HistoryObserver } from 'src/components/historyObserver/historyObserver.tsx';
+import { HistoryObserver } from 'src/components/historyObserver/historyObserver';
 
 const HistoryPage = () => {
   return (
@@ -8,4 +8,4 @@ const HistoryPage = () => {
   );
 };
 
-export default HistoryObserver;
+export default HistoryPage;

@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
-import { SwitchTheme } from 'src/components/switchTheme/switchTheme.tsx';
+import { SwitchTheme } from 'src/components/switchTheme/switchTheme';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectMenu } from 'src/store/selectors/menuButton';
 import { toggleTheme } from 'src/store/slices/switchTheme';

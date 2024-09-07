@@ -5,8 +5,8 @@ import Page404 from 'src/features/page404';
 import ContactUsPage from 'src/features/contactUsPage';
 import AboutProjectPage from 'src/features/aboutProjectPage';
 
-import { MenuButton } from 'src/components/menuButton/menuButton.tsx';
-import { SwitchTheme } from 'src/components/switchTheme/switchTheme.tsx';
+import { MenuButton } from 'src/components/menuButton/menuButton';
+import { SwitchTheme } from 'src/components/switchTheme/switchTheme';
 
 import './index.css';
 

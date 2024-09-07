@@ -3,7 +3,16 @@ import { fn } from '@storybook/test';
 
 import { Header } from './Header';
 
-const meta = {
+interface HeaderProps {
+  user?: {
+    name: string;
+  };
+  onLogin?: () => void;
+  onLogout?: () => void;
+  onCreateAccount?: () => void;
+}
+
+const meta: Meta<HeaderProps> = {
   title: 'Example/Header',
   component: Header,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs

@@ -15,7 +15,7 @@ vi.mock('react-router-dom', () => ({
   useNavigate: vi.fn(),
 }));
 
-vi.mock('src/components/menu/portal.tsx', () => ({
+vi.mock('src/components/menu/portal', () => ({
   Portal: ({ onClose }: { onClose: () => void }) => (
     <div>
       <button onClick={onClose}>Close Menu</button>
