@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 import { useEffect, useRef } from 'react';
 import { ABOUT_US_PATH, CONTACT_US_PATH, HISTORY_OBSERVER_PATH } from 'src/features/router/path';
-import { Menu } from 'src/components/menu/menu.tsx';
+import { Menu } from 'src/components/menu/menu';
 
 import './menu.css';
 

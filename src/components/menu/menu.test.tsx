@@ -3,11 +3,11 @@ import { vi } from 'vitest';
 import { Menu } from './menu';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-vi.mock('src/components/switchTheme/switchTheme.tsx', () => ({
+vi.mock('src/components/switchTheme/switchTheme', () => ({
   SwitchTheme: () => <div data-testid="switch-theme">SwitchTheme</div>,
 }));
 
-vi.mock('src/components/_common/icons/closeIcon.tsx', () => ({
+vi.mock('src/components/_common/icons/closeIcon', () => ({
   CloseIcon: (props: any) => <svg {...props} data-testid="close-icon" />,
 }));
 

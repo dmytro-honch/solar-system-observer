@@ -1,4 +1,4 @@
-import { Contacts } from 'src/components/contacts/contacts.tsx';
+import { Contacts } from 'src/components/contacts/contacts';
 
 const ContactUsPage = () => (
   <>

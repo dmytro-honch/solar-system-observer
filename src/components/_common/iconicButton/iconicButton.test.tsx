@@ -1,7 +1,7 @@
 import { describe, it, vi } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { IconicButton } from './iconicButton.tsx';
+import { IconicButton } from './iconicButton';
 import { SwitchThemeIcon } from 'src/components/_common/icons/switchThemeIcon';
 
 describe('IconicButton component', () => {

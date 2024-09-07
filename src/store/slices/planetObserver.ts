@@ -1,5 +1,10 @@
-import { PlanetObserverStateType } from 'src/types';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+
+type PlanetObserverStateType = {
+  isFullscreen: boolean;
+  isLoading: boolean;
+  isShowTools: boolean;
+};
 
 const initialState: PlanetObserverStateType = {
   isFullscreen: false,

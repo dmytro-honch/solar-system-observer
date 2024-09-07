@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { BurgerIcon } from 'src/components/_common/icons/burgerIcon.tsx';
-import { Portal } from 'src/components/menu/portal.tsx';
+import { BurgerIcon } from 'src/components/_common/icons/burgerIcon';
+import { Portal } from 'src/components/menu/portal';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectMenu } from 'src/store/selectors/menuButton.ts';
-import { closeMenu, openMenu } from 'src/store/slices/menuButton.ts';
+import { selectMenu } from 'src/store/selectors/menuButton';
+import { closeMenu, openMenu } from 'src/store/slices/menuButton';
 
 import 'src/components/_common/iconicButton/iconicButton.css';
 
