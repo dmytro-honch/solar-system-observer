@@ -6,8 +6,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { selectMenu } from 'src/store/selectors/menuButton';
 import { closeMenu, openMenu } from 'src/store/slices/menuButton';
 
-import 'src/components/_common/iconicButton/iconicButton.css';
-
 export const MenuButton = () => {
   const dispatch = useDispatch();
   const showMenu = useSelector(selectMenu);
@@ -35,7 +33,10 @@ export const MenuButton = () => {
   return (
     <>
       {!showMenu && (
-        <button onClick={handleToggleMenu} className="header-buttons">
+        <button
+          onClick={handleToggleMenu}
+          className="hover:text-[var(--primary-text-color)] p-[6px] rounded-full leading-[1] text-icon-font-size bg-[var(--primary-element-color)]"
+        >
           <BurgerIcon />
         </button>
       )}

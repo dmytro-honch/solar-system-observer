@@ -8,8 +8,6 @@ import AboutProjectPage from 'src/features/aboutProjectPage';
 import { MenuButton } from 'src/components/menuButton/menuButton';
 import { SwitchTheme } from 'src/components/switchTheme/switchTheme';
 
-import './index.css';
-
 import { ABOUT_US_PATH, CONTACT_US_PATH, FALLBACK_404_ROUTE, HISTORY_OBSERVER_PATH } from './path';
 
 const Router = () => (

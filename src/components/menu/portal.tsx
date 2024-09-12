@@ -3,8 +3,6 @@ import { useEffect, useRef } from 'react';
 import { ABOUT_US_PATH, CONTACT_US_PATH, HISTORY_OBSERVER_PATH } from 'src/features/router/path';
 import { Menu } from 'src/components/menu/menu';
 
-import './menu.css';
-
 export const links = [
   { path: HISTORY_OBSERVER_PATH, label: 'Planet Observer' },
   { path: ABOUT_US_PATH, label: 'About Us' },
