@@ -6,7 +6,7 @@ import { MenuProps } from 'src/types';
 
 export const Menu = ({ clickOnMenu }: MenuProps) => {
   return (
-    <div className="header-wrapper">
+    <div>
       <button className="header-buttons menu-close-button" onClick={clickOnMenu}>
         <CloseIcon data-testid="close-icon" />
       </button>

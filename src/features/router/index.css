@@ -1,5 +1,9 @@
-.header-wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
+.container {
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 40px;
+    }
 }
