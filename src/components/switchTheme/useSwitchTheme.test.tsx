@@ -1,6 +1,6 @@
 import { act, renderHook } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
-import ThemeContextProvider, { useTheme } from 'src/components/switchTheme/useSwitchTheme';
+import ThemeContextProvider, { useTheme } from 'src/components/switchTheme/useThemeContext';
 
 describe('useTheme Hook', () => {
   it('should toggle theme correctly', () => {
