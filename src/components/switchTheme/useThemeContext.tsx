@@ -5,13 +5,13 @@ export interface ThemeContextType {
   toggleTheme: () => void;
 }
 
-interface IProps {
+interface ThemeContextProviderProps {
   children: ReactNode;
 }
 
 export const ThemeContext = createContext<ThemeContextType | null>(null);
 
-export const ThemeContextProvider = ({ children }: IProps) => {
+export const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
   const getInitialTheme = () => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {

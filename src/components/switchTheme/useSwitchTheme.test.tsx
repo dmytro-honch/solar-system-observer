@@ -5,6 +5,7 @@ import { useTheme } from 'src/components/switchTheme/hook';
 
 describe('useTheme Hook', () => {
   it('should toggle theme correctly', () => {
+    // Мокаем localStorage
     const getItemSpy = vi.spyOn(Storage.prototype, 'getItem').mockReturnValue('light');
     const setItemSpy = vi.spyOn(Storage.prototype, 'setItem');
 
@@ -20,6 +21,13 @@ describe('useTheme Hook', () => {
 
     expect(setItemSpy).toHaveBeenCalledWith('theme', 'dark');
     expect(document.documentElement.getAttribute('data-theme')).toBe('dark');
+
+    act(() => {
+      result.current.toggleTheme();
+    });
+
+    expect(setItemSpy).toHaveBeenCalledWith('theme', 'light');
+    expect(document.documentElement.getAttribute('data-theme')).toBe('light');
 
     getItemSpy.mockRestore();
     setItemSpy.mockRestore();

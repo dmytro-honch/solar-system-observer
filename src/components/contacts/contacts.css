@@ -1,9 +1,5 @@
 .contact-form {
-    margin-top: 20px
-}
-
-.form-input input[type='text'] {
-    margin-bottom: 30px;
+    margin: 0 auto;
 }
 
 .form-input input[type='text'],
@@ -14,6 +10,8 @@
     border-radius: 20px;
     font-size: 1em;
     font-family: inherit;
+    color: var(--form-color);
+    margin-bottom: 40px;
 }
 
 .form-input input[type='text']::placeholder,
@@ -23,22 +21,17 @@
 
 .submit-btn button {
     width: 100%;
-    margin-top: 30px;
+    padding: 10px 20px;
     background-color: var(--accent-element-color);
     color: var(--secondary-text-color);
     border-radius: 20px;
-}
-
-textarea,
-input {
-    color: var(--form-color);
+    margin-top: 20px;
 }
 
 @media (min-width: 768px) {
     .contact-form {
         width: 400px;
         max-width: 100%;
-        margin: 0 auto;
     }
 
     .submit-btn:hover {

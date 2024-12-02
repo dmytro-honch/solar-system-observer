@@ -49,7 +49,7 @@ describe('Portal Component', () => {
     document.body.removeChild(portalRoot);
   });
 
-  it('renders the Menu component inside the portal-root', () => {
+  it('renders the Menu component and calls onClose when Menu triggers clickOnMenu', () => {
     const onClose = vi.fn();
     render(
       <Provider store={store}>
@@ -64,24 +64,9 @@ describe('Portal Component', () => {
     expect(screen.getByText('Planet Observer')).toBeInTheDocument();
     expect(screen.getByText('About Us')).toBeInTheDocument();
     expect(screen.getByText('Contact Us')).toBeInTheDocument();
-  });
-
-  it('calls onClose when Menu triggers clickOnMenu', () => {
-    const onClose = vi.fn();
-    render(
-      <Provider store={store}>
-        <ThemeProvider>
-          <MemoryRouter>
-            <Portal onClose={onClose} />
-          </MemoryRouter>
-        </ThemeProvider>
-      </Provider>,
-    );
 
     const closeButton = screen.getByTestId('close-icon');
-
     fireEvent.click(closeButton);
-
     expect(onClose).toHaveBeenCalled();
   });
 });
