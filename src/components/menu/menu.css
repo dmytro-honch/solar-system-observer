@@ -21,8 +21,8 @@
 
 .menu-close-button {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 20px;
+    left: 20px;
     cursor: pointer;
     z-index: 1001;
 }
@@ -33,14 +33,13 @@
 
 
 .menu-page {
-    margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.menu-page li:not(:last-child) {
-    margin-bottom: 30px;
-}
 
 .menu-links {
     display: block;
@@ -49,7 +48,6 @@
     background-color: var(--primary-element-color);
     border-radius: 30px;
     text-align: center;
-    text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -61,5 +59,10 @@
     .menu-content {
         max-width: 100%;
         width: 400px;
+    }
+
+    .menu-close-button {
+        top: 40px;
+        left: 40px;
     }
 }

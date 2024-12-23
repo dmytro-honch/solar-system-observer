@@ -2,7 +2,8 @@ import './about.css';
 
 export const About = () => (
   <div className="page-wrapper">
-    <h2 className="about-title">About</h2>
+    <h2>About</h2>
+
     <div className="about-text">
       <p>
         About Welcome to our non-profit project, "Exploring the Solar System"! We are Dmytro Honcharov and Oleksii

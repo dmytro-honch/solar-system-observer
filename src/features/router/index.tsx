@@ -6,16 +6,12 @@ import ContactUsPage from 'src/features/contactUsPage';
 import AboutProjectPage from 'src/features/aboutProjectPage';
 
 import { MenuButton } from 'src/components/menuButton/menuButton';
-import { SwitchTheme } from 'src/components/switchTheme/switchTheme';
-
-import './index.css';
 
 import { ABOUT_US_PATH, CONTACT_US_PATH, FALLBACK_404_ROUTE, HISTORY_OBSERVER_PATH } from './path';
 
 const Router = () => (
   <BrowserRouter>
     <MenuButton />
-    <SwitchTheme />
     <Routes>
       <Route path={HISTORY_OBSERVER_PATH + ':data?'} element={<HistoryPage />} />
       <Route path={ABOUT_US_PATH} element={<AboutProjectPage />} />

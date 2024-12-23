@@ -1,42 +1,35 @@
-import { act } from 'react';
-import { renderHook } from '@testing-library/react';
+import { act, renderHook } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
-import { THEMES, useSwitchTheme } from 'src/components/switchTheme/hook';
-import { useDispatch, useSelector } from 'react-redux';
-import { toggleTheme } from 'src/store/slices/switchTheme';
+import { ThemeContextProvider } from 'src/components/switchTheme/useThemeContext';
+import { useTheme } from 'src/components/switchTheme/hook';
 
-vi.mock('react-redux', () => ({
-  useDispatch: vi.fn(),
-  useSelector: vi.fn(),
-}));
+describe('useTheme Hook', () => {
+  it('should toggle theme correctly', () => {
+    // Мокаем localStorage
+    const getItemSpy = vi.spyOn(Storage.prototype, 'getItem').mockReturnValue('light');
+    const setItemSpy = vi.spyOn(Storage.prototype, 'setItem');
 
-const mockDispatch = vi.fn();
-const mockUseSelector = useSelector as jest.MockedFunction<typeof useSelector>;
-
-(useDispatch as jest.MockedFunction<typeof useDispatch>).mockReturnValue(mockDispatch);
-
-describe('useSwitchTheme Hook', () => {
-  it('should toggle theme and dispatch toggleTheme action', () => {
-    mockUseSelector.mockReturnValue(THEMES.light);
-
-    const { result } = renderHook(() => useSwitchTheme());
-
-    act(() => {
-      result.current();
+    const { result } = renderHook(() => useTheme(), {
+      wrapper: ({ children }) => <ThemeContextProvider>{children}</ThemeContextProvider>,
     });
 
-    expect(mockDispatch).toHaveBeenCalledWith(toggleTheme(THEMES.dark));
-  });
-
-  it('should apply theme styles on theme change', () => {
-    mockUseSelector.mockReturnValue(THEMES.light);
-
-    const { result } = renderHook(() => useSwitchTheme());
+    expect(result.current.theme).toBe('light');
 
     act(() => {
-      result.current();
+      result.current.toggleTheme();
     });
 
-    expect(document.body.getAttribute('data-theme')).toBe(THEMES.dark);
+    expect(setItemSpy).toHaveBeenCalledWith('theme', 'dark');
+    expect(document.documentElement.getAttribute('data-theme')).toBe('dark');
+
+    act(() => {
+      result.current.toggleTheme();
+    });
+
+    expect(setItemSpy).toHaveBeenCalledWith('theme', 'light');
+    expect(document.documentElement.getAttribute('data-theme')).toBe('light');
+
+    getItemSpy.mockRestore();
+    setItemSpy.mockRestore();
   });
 });
