@@ -1,11 +1,13 @@
-import { useState } from 'react';
-import './dropdown-optins.css';
+import { useRef, useState } from 'react';
+import './dropdown-options.css';
+
+type OptionType = {
+  value: number;
+  label: string;
+};
 
 export const DropdownList = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState('Famous people');
-
-  const options = [
+  const options: OptionType[] = [
     { value: 1, label: 'Famous people' },
     { value: 2, label: 'Events' },
     { value: 3, label: 'Fights' },
@@ -14,35 +16,44 @@ export const DropdownList = () => {
     { value: 6, label: 'Cultural events' },
   ];
 
-  const toggleDropdown = () => {
-    setIsOpen((isOpen) => !isOpen);
-  };
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [selectedOption, setSelectedOption] = useState<OptionType>(options[0]);
+  const listRef = useRef<HTMLUListElement>(null);
 
-  const selectOption = (option) => {
+  const toggleDropdown = () => setIsOpen((prev) => !prev);
+
+  const selectOption = (option: OptionType) => {
     setSelectedOption(option);
     setIsOpen(false);
   };
 
+  const scrollList = (direction: number) => {
+    if (listRef.current) {
+      listRef.current.scrollBy({ top: direction * 50, behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className={`dropdown-container ${isOpen ? 'open' : ''}`}>
+    <div className="dropdown-container">
       <button className="dropdown-button" onClick={toggleDropdown}>
-        <span>Show: </span>
-        <span className="selected-value">{selectedOption}</span>
-        <span className={`arrow ${isOpen ? 'up' : 'down'}`}></span>
+        <span>Show: {selectedOption.label}</span>
+        <span>{isOpen ? '▲' : '▼'}</span>
       </button>
       {isOpen && (
         <div className="dropdown-list-wrap">
-          <button className="button-up">▲</button>
-          <button className="button-down" style={{ order: 3 }}>
-            ▼
+          <button className="scroll-button" onClick={() => scrollList(-1)}>
+            ▲
           </button>
-          <ul className="dropdown-list">
-            {options.map(({ value, label }) => (
-              <li key={value} onClick={() => selectOption(label)}>
-                {label}
+          <ul className="dropdown-list" ref={listRef}>
+            {options.map((option) => (
+              <li key={option.value} className="dropdown-item" onClick={() => selectOption(option)}>
+                {option.label}
               </li>
             ))}
           </ul>
+          <button className="scroll-button" onClick={() => scrollList(1)}>
+            ▼
+          </button>
         </div>
       )}
     </div>
